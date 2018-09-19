@@ -1,4 +1,4 @@
-<?php define(FORWARDED_FILE, "forwarded.txt");
+<?php define(FORWARDED_FILE, "home.html");
 $title=$h1="Boxing Club" ;$p1="This page has moved to " ;
 try{
     $file=fopen(FORWARDED_FILE, 'r');
