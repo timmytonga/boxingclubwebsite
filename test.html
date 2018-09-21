@@ -28,11 +28,12 @@ body, html {
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
+  	<div class="w3-col s3">
+      <a href="#calendar" class="w3-button w3-block w3-black">EVENTS & SCHEDULE</a>
+    </div>
+
     <div class="w3-col s3">
       <a href="#howtojoin" class="w3-button w3-block w3-black">HOW TO JOIN</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#calendar" class="w3-button w3-block w3-black">EVENTS/SCHEDULE</a>
     </div>
     <div class="w3-col s3">
       <a href="#faqs" class="w3-button w3-block w3-black">FAQs</a>
@@ -60,6 +61,55 @@ body, html {
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
 
+<!-- Calendar Container -->
+<div class="w3-container" id="calendar">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">UPCOMING EVENTS & SCHEDULE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Events & Announcements</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink"> Practices & Competition</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+		<h4><b>Announcements</b></h4><br>
+    	<p>- [9/21] PM any of the board member on FB for CPR/First-aid training signups. </p>
+    	<hr><h4><b>Upcoming Events</b></h4><br>
+    	<h5> Anteater Involvement Fair: Mon, Sep 24 9.00 am to 4.00 pm. </h5>
+		<p class="w3-text-grey">Come out and support boxing club! Wear your boxing shirt and help volunteer to get a limited edition boxing club wristband. More info can be found <a href=" https://campusorgs.uci.edu/images/AIF2018/AIF18_Program-FINAL.pdf" target="_blank">here.</a></p><br>
+
+		<h5> Boxing Club Demo: Mon, Sep 24th 9.20p - 9.55p (Stage 2) and Thursday, Sep 27th </h5>
+		<p class="w3-text-grey"> We are demoing to show off the sweet science!  </p>
+
+		<hr><h4><b>Past Events</b></h4><br>
+		<h5>GGG vs. Canelo 2 </h5>
+		<p class="w3-text-grey">Sep. 15, 7.00 pm at the ARC. RSVP here.</p><br>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>On-Campus Practices</h5>
+      <p class="w3-text-grey">Mon/Thu 8.30-10.30 pm ARC's Training Zone</p><br>
+    
+      <h5>Upcoming Off-Campus Practices</h5>
+      <p class="w3-text-grey">Sunday 2.00-4.30 pm Oyama MMA and Fitness</p><br>
+
+      <h5>Upcoming Runs</h5>
+      <p class="w3-text-grey">Tuesdays 6.00 pm</p><br>
+
+      <h5>Upcoming Competitions</h5>
+      <p class="w3-text-grey">TBA</p><br>
+      
+    </div>  
+    <img src="./images/socialpool.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
 <!-- About Container -->
 <div class="w3-container" id="howtojoin">
   <div class="w3-content" style="max-width:700px">
@@ -78,7 +128,7 @@ body, html {
         </ul></li>
         <li> <strong>Step 3:</strong> Complete the club's <a href="https://goo.gl/forms/AaKwlt5LFeKcDyj03" target="_blank">Emergeny Contact Form</a>.</li>
     </ul>    
-    <p>Looking forward to see you here!</p>
+    <p>Looking forward to seeing you here!</p>
     <!-- Automatic Slideshow Images -->
     <div class="mySlides w3-display-container w3-center">
         <img src="./images/gym.jpg" style="width:100%">
@@ -106,47 +156,7 @@ body, html {
   </div>
 </div>
 
-<!-- Menu Container -->
-<div class="w3-container" id="calendar">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">UPCOMING EVENTS & SCHEDULE</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Schedule</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Events</div>
-      </a>
-    </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>On-Campus Practices</h5>
-      <p class="w3-text-grey">Mon/Thu 8.30-10.30pm ARC's Training Zone</p><br>
-    
-      <h5>Upcoming Off-Campus Practices</h5>
-      <p class="w3-text-grey">TBA</p><br>
-
-      <h5>Upcoming Runs</h5>
-      <p class="w3-text-grey">TBA</p><br>
-
-      <h5>Upcoming Competitions</h5>
-      <p class="w3-text-grey">TBA</p><br>
-    
-    </div>
-
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>GGG vs. Canelo 2 </h5>
-      <p class="w3-text-grey">Sep. 15, 7.00pm at the ARC. RSVP here.</p><br>
-    
-      <h5> Upcoming Social Events </h5>
-      <p class="w3-text-grey">TBA.</p><br>
-      
-    </div>  
-    <img src="./images/socialpool.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
-  </div>
-</div>
 
 <!-- Frequently Asked Questions Container -->
 <div class="w3-container" id="faqs" style="padding-bottom:32px;">
