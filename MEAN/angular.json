@@ -28,7 +28,7 @@
               },
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/js/photoswipe.min.js","src/assets/js/photoswipe-ui-default.min.js"],
           },
           "configurations": {
             "production": {
@@ -80,7 +80,7 @@
               },
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": ["src/assets/js/photoswipe.min.js","src/assets/js/photoswipe.min.js"],
             "assets": [
               "src/favicon.ico",
               "src/assets"
