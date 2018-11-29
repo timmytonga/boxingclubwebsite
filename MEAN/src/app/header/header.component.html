@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+  <span> <a routerLink="/">Home</a> </span> <span class="spacer"></span>
+
+  <ul>
+    <li>
+      <a mat-button routerLink="/event" routerLinkActive="mat-accent">
+        EVENTS & SCHEDULE
+      </a>
+    </li>
+    <li>
+      <a mat-button routerLink="/about" routerLinkActive="mat-accent">
+        HOW TO JOIN
+      </a>
+    </li>
+    <li>
+      <a mat-button routerLink="/contact" routerLinkActive="mat-accent"> CONTACT </a>
+    </li>
+    <li>
+      <a mat-button routerLink="/news" routerLinkActive="mat-accent"> NEWS </a>
+    </li>
+    <li>
+      <a mat-button routerLink="/gallery" routerLinkActive="mat-accent"> GALLERY </a>
+    </li>
+    <li>
+      <a mat-button routerLink="/faq" routerLinkActive="mat-accent"> FAQ </a>
+    </li>
+    <li *ngIf="ifAuth">
+      <a mat-button routerLink="/create" routerLinkActive="mat-accent">
+        New Post
+      </a>
+    </li>
+    <li *ngIf="!ifAuth">
+      <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">
+        Sign UP
+      </a>
+    </li>
+    <li *ngIf="!ifAuth">
+      <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent">
+        Log In
+      </a>
+    </li>
+    <li *ngIf="ifAuth">
+      <button mat-button (click)="onLogOut()">Log out</button>
+    </li>
+  </ul>
+</mat-toolbar>
