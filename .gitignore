@@ -4,12 +4,12 @@
 *.png
 
 # compiled output
-/dist
-/tmp
-/out-tsc
+/MEAN/dist
+/MEAN/tmp
+/MEAN/out-tsc
 
 # dependencies
-/node_modules
+/MEAN/node_modules
 
 # IDEs and editors
 /.idea
