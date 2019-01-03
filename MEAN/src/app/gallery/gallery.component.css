@@ -1,0 +1,10 @@
+.small_img{
+    max-height: 200px;
+}
+figure{
+    display: inline-block;
+    margin: 0;
+}
+.my-gallery{
+    display: inline;
+}
