@@ -16,7 +16,7 @@ import { PostsModule } from './posts/posts.module';
 import { EventComponent } from './event/event.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryComponent } from './gallery/gallery-list/gallery.component';
 import { NewsComponent } from './news/news.component';
 import { FooterComponent } from './footer/footer.component';
 import { FaqComponent } from './faq/faq.component';

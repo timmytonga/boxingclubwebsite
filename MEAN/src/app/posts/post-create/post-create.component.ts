@@ -25,7 +25,7 @@ export class PostCreateComponent implements OnInit, OnDestroy {
   isLoading = false;
 
   form: FormGroup;
-  imagePreview: string;
+  imagePreview: string | ArrayBuffer;
 
   ngOnInit() {
     this.authStatusSub = this.authService

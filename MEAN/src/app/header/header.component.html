@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <span> <a routerLink="/">Home</a> </span> <span class="spacer"></span>
+  <span> <a routerLink="/home">Home</a> </span> <span class="spacer"></span>
 
   <ul>
     <li>
@@ -24,11 +24,11 @@
     <li>
       <a mat-button routerLink="/faq" routerLinkActive="mat-accent"> FAQ </a>
     </li>
-    <li *ngIf="ifAuth">
+    <!-- <li *ngIf="ifAuth">
       <a mat-button routerLink="/create" routerLinkActive="mat-accent">
         New Post
       </a>
-    </li>
+    </li> -->
     <li *ngIf="!ifAuth">
       <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">
         Sign UP
